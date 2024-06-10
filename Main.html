@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comment Submission</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Submit Your Comment</h1>
+        <h4>
+        After you pay, we will be sure to deliver this to your politician's doorstep in a respectful, secure, and anonymous manner. We do not log IP addresses or other identifiable information. 
+        </h4>
+        <form id="commentForm">
+            <label for="politician">Choose a politician:</label>
+            <select id="politician" name="politician">
+                <option value="Trump">Trump</option>
+                <option value="Biden">Biden</option>
+            </select>
+
+            <label for="sentiment">Choose your sentiment:</label>
+            <select id="sentiment" name="sentiment">
+                <option value="Love">Love</option>
+                <option value="Hate">Hate</option>
+            </select>
+
+            <label for="comment">Your Comment:</label>
+            <textarea id="comment" name="comment" rows="5"></textarea>
+
+            <p>Total Cost: $<span id="totalCost">0.00</span></p>
+
+            <button type="button" id="submitBtn">Pay to Submit</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
